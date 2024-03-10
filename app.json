@@ -1,0 +1,67 @@
+{
+    "expo": {
+        "name": "La cité",
+        "slug": "lacite",
+        "version": "1.0.2",
+        "scheme": "lacite",
+        "platforms": [
+            "ios",
+            "android"
+        ],
+        "orientation": "portrait",
+        "icon": "./assets/images/icon.png",
+        "userInterfaceStyle": "dark",
+        "splash": {
+            "image": "./assets/images/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#000000"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "app.lacite.main",
+            "associatedDomains": [
+                "applinks:lacite.app",
+                "applinks:lacite.netlify.app"
+            ]
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/images/adaptive-icon.png",
+                "backgroundColor": "#000000"
+            },
+            "package": "app.lacite.main",
+            "intentFilters": [
+                {
+                    "action": "VIEW",
+                    "data": [
+                        {
+                            "scheme": "https",
+                            "host": "lacite.app",
+                            "pathPrefix": "/open"
+                        },
+                        {
+                            "scheme": "https",
+                            "host": "lacite.netlify.app",
+                            "pathPrefix": "/open"
+                        }
+                    ],
+                    "category": [
+                        "BROWSABLE",
+                        "DEFAULT"
+                    ]
+                }
+            ]
+        },
+        "web": {
+            "favicon": "./assets/images/favicon.png"
+        },
+        "extra": {
+            "eas": {
+                "projectId": "ea5df600-1afb-4de0-b337-9ea563c25b2a"
+            }
+        }
+    }
+}
